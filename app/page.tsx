@@ -1,8 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import {ICONS} from '@/constants/assets'
-import {Button} from '@/components/gocloud/Button'
-import {ArrowRight, Boxes, Cloud, Cpu, LayoutDashboardIcon, Server, Terminal, Workflow} from 'lucide-react'
 import Header from "@/components/gocloud/landing/Header";
 import HeroSection from "@/components/gocloud/landing/HeroSection";
 import Features from "@/components/gocloud/landing/Features";
