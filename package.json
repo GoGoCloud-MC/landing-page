@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"start": "next start -p 4001",
+		"start": "next start -p 12641",
 		"lint": "next lint"
 	},
 	"dependencies": {
