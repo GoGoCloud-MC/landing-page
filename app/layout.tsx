@@ -14,6 +14,25 @@ const quicksand = localFont({
 export const metadata: Metadata = {
 	title: "GoGoCloud | Robust cloud solution",
 	description: "GoGoCloud is a robust cloud solution, for your minecraft network. Built on top of the latest technologies, like Go, and TypeScript.",
+	keywords: "GoGoCloud, Minecraft server hosting, cloud solutions, scalable Minecraft hosting, cloud infrastructure, fast Minecraft servers, Go programming, cloud hosting for games",
+	authors: [{
+		name: "Fedox",
+		url: "https://fedox.ovh",
+	}],
+	robots: "index, follow",
+	openGraph: {
+		title: "GoGoCloud | Robust Cloud Solution for Minecraft Networks",
+		description: "GoGoCloud offers scalable and high-performance cloud solutions for Minecraft networks. Powered by Go and modern cloud technologies.",
+		url: "https://gogo.fedustria.net",
+		siteName: "GoGoCloud",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		site: "@gogocloud",
+		title: "GoGoCloud | Robust Cloud Solution for Minecraft Networks",
+		description: "GoGoCloud is a robust cloud solution, offering powerful and scalable hosting for your Minecraft network.",
+	},
 };
 
 export default function RootLayout({
@@ -23,6 +42,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
+		<head>
+			{/* Meta tags for better SEO */}
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<meta name="theme-color" content="#F1F4FA"/>
+			<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+			<link rel="icon" href="/favicon.ico"/>
+			<link rel="canonical" href="https://gogocloud.com"/>
+			{/* Font Preload for Quicksand font */}
+			<link rel="preload" href="./fonts/Quicksand.ttf" as="font" type="font/ttf" crossOrigin="anonymous"/>
+		</head>
 		<body className={`${quicksand.variable} bg-[#F1F4FA] dark:bg-gogo-dark-100`}>
 		<ThemeProvider
 			attribute="class"
