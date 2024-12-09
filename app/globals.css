@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+@variant dark (&:where(.dark, .dark *));
+
+* {
+    @apply font-quicksand;
+}
+
+@theme {
+    --font-quicksand: 'Quicksand', sans-serif;
+
+    --color-gogo-black-100: oklch(0% 0 0);
+    --color-gogo-black-70: oklch(33.29% 0 0);
+
+    --color-gogo-dark-100: oklch(22.23% 0.006 271.14);
+    --color-gogo-dark-70: oklch(30.84% 0.0061 258.35);
+
+    --color-gogo-grey-100: oklch(78.26% 0 0);
+    --color-gogo-grey-90: oklch(97.31% 0 0);
+    --color-gogo-grey-80: oklch(98.51% 0 0);
+    --color-gogo-grey-70: oklch(72.52% 0 0);
+    --color-gogo-grey-black: oklch(55.9% 0 0);
+
+    --color-gogo-white: oklch(100% 3.5594404384177905e-8 106.37411429114086);
+
+    --color-gogo-bluedeep: oklch(75.13% 0.0399 242.3);
+
+    --color-gogo-red: oklch(67.68% 0.1991 24.14);
+
+    --color-gogo-success: oklch(71.21% 0.1082 183.46);
+}
+
+@layer utilies {
+    .h1-title {
+        @apply font-bold text-[4.3rem]
+    }
+
+    .h2-title {
+        @apply font-bold text-[2.5rem]
+    }
+
+    .h3-title {
+        @apply font-bold text-[2rem]
+    }
+
+    .title-1 {
+        @apply font-bold text-[1.8rem]
+    }
+
+    .title-2 {
+        @apply font-bold text-[1.6rem]
+    }
+
+    .title-3 {
+        @apply font-bold text-[1.1rem]
+    }
+
+    .title-4 {
+        @apply text-[1.1rem] font-bold;
+    }
+
+    .headline {
+        @apply font-bold text-[0.9rem]
+    }
+
+    .body {
+        @apply text-[0.9rem] font-semibold;
+    }
+
+    .caption-1 {
+        @apply text-[0.875rem] font-bold;
+    }
+
+    .caption-2 {
+        @apply text-[0.813rem];
+    }
+
+    .caption-3 {
+        @apply text-[0.75rem] font-bold;
+    }
+
+    .caption-4 {
+        @apply text-[0.75rem];
+    }
+
+    .invert-colors {
+        @apply invert dark:invert-0;
+    }
+}
+
+.without-ring {
+    @apply focus:ring-0 focus:ring-offset-0;
+}
+
+pre {
+    @apply !bg-transparent;
+}
